@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMART LOAN CALCULATOR</title>
+    <link rel="stylesheet" href="styleforloan.css"
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <div class="calculator-header">
+                <h2>Smart loan calculator</h2>
+                <p class="subtitle">
+                    
+                </p>
+            </div>
+
+            <div class="calculator-body">
+                <div class="input-selection">
+                    <div class="input-group">
+                        <label for="amount">Loan amount(in INR)</label>
+                        <input type="number" id="amount" placeholder="e.g.,20000000"/>
+                        <span class="input-icon">INR</span>
+                    </div>    
+                    <div class="input-group">
+                    <label for="interest">Annual interest rate(%)</label>
+                    <input 
+                    type="number" 
+                    id="interest" 
+                    step="0.1" 
+                    placeholder="e.g., 5.5"
+                    />
+                    <span class="input-icon">%</span>
+                    </div>
+                    <div class="input-group">
+                       <label for="years">Loan duration</label>
+                       <input type="number" id="years" placeholder="e.g., 30"/>
+                       <span class="input-icon">years</span>
+                    </div>
+                    <button id="calculatebtn">
+                        calculate Loan <span class="button-icon">-></span>
+                    </button>
+            </div>
+
+            <div class="results" id="results">
+                <h3>Loan Summary</h3>
+                <div class="result-grid">
+                    <div class="result-item">
+                        <span class="result-label">Monthly EMI</span>
+                        <span class="result-value" id="monthly">INR0.00</span>
+                    </div>
+                    <div class="result-item">
+                        <span class="result-label">Total payment</span>
+                        <span class="result-value" id="total">Inr0.000</span>
+                    </div>
+                    <div class="result-item">
+                        <span class="result-label">Total interest</span>
+                        <span class="result-value" id="totalInterest">Inr0.00</span>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <script src="loan.js"></script>
+</body>
+</html>
